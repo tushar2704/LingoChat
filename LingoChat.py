@@ -1,15 +1,27 @@
+#Author Tushar Aggarwal(https://www.tushar-aggarwal.com/)
+# LingoChat
+
 import streamlit as st
 import openai
-st.title("Foreign-Language Private Tutor")
+
+# Application title and body
+st.set_page_config(page_title="🤖LingoChat🤖",
+                   page_icon="🤖",
+                   layout='wide')
+# Title of application
+st.title("🤖LingoChat")
+st.markdown("### By [Tushar Aggarwal](https://www.tushar-aggarwal.com/)")
 
 # Initialize OpenAI API
-api_key = st.text_input("Enter your OpenAI API key")
+st.sidebar.markdown("## OpenAI API Key")
+
+api_key = st.sidebar.text_input("Enter your OpenAI API key")
 if not api_key:
     st.write("Please enter your OpenAI API key first. Don't worry this will not be stored.")
     st.stop()
 openai.api_key = api_key
 
-text_input = st.text_input("Enter your text, in any Language and start chatting")
+text_input = st.text_input("Now enter your query, in any Language and start chatting")
 generate_button = st.button("Generate")
 
 def generate_response(input_text):
@@ -26,3 +38,84 @@ if generate_button:
 
     # Display the generated response
     st.write(response)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ---- HIDE STREAMLIT STYLE ----
+hide_st_style = """
+            <style>
+            MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
