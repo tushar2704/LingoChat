@@ -5,11 +5,11 @@ st.title("Foreign-Language Private Tutor")
 # Initialize OpenAI API
 api_key = st.text_input("Enter your OpenAI API key")
 if not api_key:
-    st.write("Please enter your OpenAI API key first. Don' worry it wont store the key")
+    st.write("Please enter your OpenAI API key first. Don't worry this will not be stored.")
     st.stop()
 openai.api_key = api_key
 
-text_input = st.text_input("Enter your text")
+text_input = st.text_input("Enter your text, in any Language and start chatting")
 generate_button = st.button("Generate")
 
 def generate_response(input_text):
