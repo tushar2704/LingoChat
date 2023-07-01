@@ -1,7 +1,7 @@
 # LingoChat
 
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://https://lingochat.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://lingochat.streamlit.app/)
 ## Overview
 Foreign-Language Private Tutor is an interactive web application powered by Generative AI that assists users in learning foreign languages. The application leverages OpenAI's powerful language model to generate contextually relevant responses based on user input. With its user-friendly interface, learners can practice their foreign language skills and receive instant feedback.
 
