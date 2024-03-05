@@ -35,7 +35,7 @@ To run the Foreign-Language Private Tutor application locally, follow these step
 
 5. Run the Streamlit application:
    ```bash
-   streamlit run tutor_app.py
+   streamlit run LingoChat.py
    ```
 
 6. Open your web browser and navigate to http://localhost:8501 to access the Foreign-Language Private Tutor application.
